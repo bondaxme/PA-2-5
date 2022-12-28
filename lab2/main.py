@@ -1,8 +1,5 @@
 from pyamaze import COLOR
-
 from algorithms import *
-
-
 
 def main():
     size = int(input("Maze size [2 - 20]: "))
@@ -16,15 +13,13 @@ def main():
     maze_ = maze(size, size)
     maze_.CreateMaze(loopPercent=40)
 
-    if alg_choose == "BFS":
-        path = aStar(maze_)
-    else:
-        path = BFS_alg(maze_)
+    call_algorithm(alg_choose)
 
-    a = agent(maze_, shape="arrow", footprints=True, color=COLOR.red)
-    maze_.tracePath({a: path}, delay=50)
+    a = agent(maze_, shape="arrow", footprints=True, color=COLOR.yellow)
+    maze_.tracePath({a: path}, delay=0)
     maze_.run()
-    print(f"[{alg_choose}] The length of path {len(path)}")
+    print(
+        f"[{alg_choose}] The length of path {len(path)}, the number of iterations: {iterations_counter}, the amount of unique states: {states_amount}")
 
 if __name__ == '__main__':
     main()
