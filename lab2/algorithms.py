@@ -1,6 +1,6 @@
 import os
 import psutil as psutil
-from func_timeout import *
+import func_timeout
 from pyamaze import maze,agent,textLabel
 from queue import PriorityQueue
 from time import time
@@ -8,11 +8,11 @@ from time import time
 def h(cell_a: tuple, cell_b: tuple) -> int: #manhattan distance
     return abs(cell_a[0] - cell_b[0]) + abs(cell_a[1] - cell_b[1])
 
-def call_algorithm(algorithm):
-    if algorithm == "BFS":
-        return func_timeout.func_timeout(60 * 30, BFS)
+def call_algorithm(maze, algorithm_name): # with time limit
+    if algorithm_name == "BFS":
+        return func_timeout.func_timeout(60 * 30, BFS, args=[maze])
     else:
-        return
+        return func_timeout.func_timeout(60 * 30, Astar, args=[maze])
 
 def neighbour_check(direction, current): #find neighbour
     if direction == 'E':

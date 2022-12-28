@@ -13,7 +13,8 @@ def main():
     maze_ = maze(size, size)
     maze_.CreateMaze(loopPercent=40)
 
-    call_algorithm(alg_choose)
+    path, iterations_counter, states_amount = call_algorithm(maze_, alg_choose)
+
 
     a = agent(maze_, shape="arrow", footprints=True, color=COLOR.yellow)
     maze_.tracePath({a: path}, delay=0)
