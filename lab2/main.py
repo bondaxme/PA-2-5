@@ -18,8 +18,7 @@ def main():
     a = agent(maze_, shape="arrow", footprints=True, color=COLOR.yellow)
     maze_.tracePath({a: path}, delay=40)
     maze_.run()
-    print(
-        f"[{alg_choose}] The length of path {len(path)}, the number of iterations: {iterations_counter}, the amount of unique states: {states_amount}")
+    print(f"[{alg_choose}] The length of path {len(path)}, the number of iterations: {iterations_counter}, the amount of unique states: {states_amount}")
 
 if __name__ == '__main__':
     main()
