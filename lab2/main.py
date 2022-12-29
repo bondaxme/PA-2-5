@@ -1,5 +1,5 @@
 from pyamaze import COLOR
-from algorithms import *
+from algorithm import *
 
 def main():
     size = int(input("Maze size [2 - 20]: "))
@@ -17,7 +17,7 @@ def main():
 
 
     a = agent(maze_, shape="arrow", footprints=True, color=COLOR.yellow)
-    maze_.tracePath({a: path}, delay=0)
+    maze_.tracePath({a: path}, delay=40)
     maze_.run()
     print(
         f"[{alg_choose}] The length of path {len(path)}, the number of iterations: {iterations_counter}, the amount of unique states: {states_amount}")
