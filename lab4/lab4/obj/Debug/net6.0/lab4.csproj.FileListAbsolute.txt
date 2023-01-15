@@ -1,0 +1,15 @@
+D:\KPI\PA-2-5\lab4\lab4\bin\Debug\net6.0\lab4.exe
+D:\KPI\PA-2-5\lab4\lab4\bin\Debug\net6.0\lab4.deps.json
+D:\KPI\PA-2-5\lab4\lab4\bin\Debug\net6.0\lab4.runtimeconfig.json
+D:\KPI\PA-2-5\lab4\lab4\bin\Debug\net6.0\lab4.dll
+D:\KPI\PA-2-5\lab4\lab4\bin\Debug\net6.0\lab4.pdb
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.csproj.AssemblyReference.cache
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.GeneratedMSBuildEditorConfig.editorconfig
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.AssemblyInfoInputs.cache
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.AssemblyInfo.cs
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.csproj.CoreCompileInputs.cache
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.dll
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\refint\lab4.dll
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.pdb
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\lab4.genruntimeconfig.cache
+D:\KPI\PA-2-5\lab4\lab4\obj\Debug\net6.0\ref\lab4.dll
