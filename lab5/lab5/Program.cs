@@ -9,21 +9,14 @@ namespace lab5
             var result = new StringBuilder();
             var problem = new Problem();
             var algorithm = new Algorithm(problem);
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 100; i++)
             {
-                algorithm.RunIterations(20);
+                algorithm.RunIterations(100);
                 var bestSolution = algorithm.GetBestSolution();
-                var line = $"Iteration: {i * 20 + 20}, Cost: {bestSolution.Cost}";
+                var line = $"iteration count: {i * 100 + 100}, cost on this iteration: {bestSolution.Cost}";
                 result.AppendLine(line);
                 Console.WriteLine(line);
             }
-            WriteResultToFile("result.txt", result.ToString());
         }
-        
-        private static void WriteResultToFile(string fileName, string content)
-        {
-            File.WriteAllText(fileName, content);
-        }
-
     }
 }
